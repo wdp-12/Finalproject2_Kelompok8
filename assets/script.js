@@ -1,3 +1,23 @@
+// <==========({[Card Animation Handler]})==========>
+function cardAnimation(classOrId, delay, duration=1) {
+    document.querySelector(classOrId).style.visibility = 'hidden'
+    setTimeout(() => {
+        document.querySelector(classOrId).style.animation = `popUp ${duration}s`
+        document.querySelector(classOrId).style.visibility = 'visible'
+    }, delay);
+}
+
+if (!window.matchMedia("(max-width: 768px)").matches) {
+    cardAnimation('.card1', 900)
+    cardAnimation('.card2', 600)
+    cardAnimation('.card3', 1200)
+    cardAnimation('.card4', 1900)
+    cardAnimation('.card5', 1300)
+    cardAnimation('.card6', 700)
+    cardAnimation('.card7', 400)
+    cardAnimation('.card8', 1400)
+}
+
 // <==========({[Smooth Scroll Handler]})==========>
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
