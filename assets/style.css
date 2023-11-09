@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* <==========({[Header/navbar style]})==========> */
+.header-content {
+    width: 1240px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.header-content-sm,
+.wrapper-sm {
+    display: none;
+}
+
+.menu-icon {
+    margin-right: 20px;
+    cursor: pointer;
+    animation: popDown .7s;
+}
+
+.menu-items {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #234CAD;
+    font-size: 18px;
+    font-family: Nunito;
+    font-weight: 600;
+    line-height: 29px;
+    word-wrap: break-word;
+}
+
+.menu-items a:nth-child(1) {
+    animation: popUp .6s;
+    transition: all .6s;
+}
+
+.menu-items a:nth-child(2) {
+    animation: popUp .7s;
+}
+
+.menu-items a:nth-child(3) {
+    animation: popUp .8s;
+}
+
+.menu-items a:nth-child(4) {
+    animation: popUp .9s;
+}
+
+.btn-header {
+    display: flex;
+    align-items: center;
+}
+
+.btn-header button {
+    margin-left: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    padding: 11px 36px;
+    text-align: center;
+    color: #234CAD;
+    font-size: 18px;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.btn-header button:nth-child(1) {
+    animation: slideRight .7s ease-out;
+}
+
+.btn-header button:nth-child(2) {
+    animation: slideLeft .7s ease-out;
+}
+
+#LoginButton {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #234CAD;
+}
+
+#SignUpButton {
+    background-color: #F2F6FF;
+}
+
+/* <==========({[Banner style]})==========> */
+
+/* <==========({[Product style]})==========> */
+
+/* <==========({[Features style]})==========> */
+
+/* <==========({[About style]})==========> */
+
+/* <==========({[Pricing style]})==========> */
+
+/* <==========({[Contact-Newsletter style]})==========> */
+
+/* <==========({[Footer style]})==========> */
+
+
+/* 768px BREAKPOINT */
+@media (max-width: 768px) {
+    .header-content {
+        display: none;
+    }
+    
+    .header-content-sm {
+        display: flex;
+    }
+    
+    .menu-icon-sm {
+        width: 40px;
+        margin-top: 10px;
+        z-index: 2;
+    }
+    
+    .wrapper-sm {
+        background-color: rgba(255, 255, 255, 0.9);
+        flex-direction: column;
+        position: fixed;
+        padding-top: 50px;
+        width: 93%;
+        height: 100%;
+        opacity: 1;
+        transform: translateY(0);
+        transition: all .4s;
+        animation: slideDown .7s;
+    }
+
+    .menu-items {
+        display: block;
+    }
+
+    .menu-items a {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: medium;
+        align-items: center;
+    }
+
+    .btn-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-header button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: medium;
+        margin-left: 0;
+        padding: 8px 85px;
+    }
+}
+
+/* <==========({[Local Keyframes]})==========> */
+@keyframes popDown {
+	0% {transform: scale(2); opacity: 0;}
+	60% {transform: scale(0.8); opacity: 0.8;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+@keyframes popUp {
+	0% {transform: scale(0); opacity: 0;}
+    80% {transform: scale(1.2); opacity: 1;}
+    100% {transform: scale(1);}
+}
+
+@keyframes slideDown {
+	0% {transform: translateY(-35px); opacity: 0;}
+    50% {transform: translateY(5); opacity: 1;}
+    100% {transform: translateY(0);}
+}
+
+@keyframes slideUp {
+	0% {transform: translateY(35px); opacity: 0;}
+    50% {transform: translateY(-5px); opacity: 1;}
+    100% {transform: translateY(0);}
+}
+
+@keyframes slideRight {
+	0% {transform: translateX(-35px); opacity: 0;}
+    50% {transform: translateX(5px); opacity: 1;}
+    100% {transform: translateX(0);}
+}
+
+@keyframes slideLeft {
+	0% {transform: translateX(35px); opacity: 0;}
+    50% {transform: translateX(-5px); opacity: 1;}
+    100% {transform: translateX(0);}
+}
