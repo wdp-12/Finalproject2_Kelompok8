@@ -1,9 +1,9 @@
 // <==========({[Card Animation Handler]})==========>
-function cardAnimation(classOrId, delay, duration=1) {
-    document.querySelector(classOrId).style.visibility = 'hidden'
+function cardAnimation(selector, delay, duration = 7.5) {
+    document.querySelector(selector).style.visibility = 'hidden'
     setTimeout(() => {
-        document.querySelector(classOrId).style.animation = `popUp ${duration}s`
-        document.querySelector(classOrId).style.visibility = 'visible'
+        document.querySelector(selector).style.animation = `loopPopUp ${duration}s infinite`
+        document.querySelector(selector).style.visibility = 'visible'
     }, delay);
 }
 
@@ -32,7 +32,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
 
 // <==========({[Menu Toggle Handler]})==========>
 document.querySelector('.menu-icon-sm').addEventListener('click', () => {
