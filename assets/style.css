@@ -703,7 +703,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #257edf;
 }
 
-
 /* <==========({[Footer style]})==========> */
 .footer {
     width: 80%;
@@ -816,6 +815,7 @@ body::-webkit-scrollbar-thumb {
         font-weight: 700;
         line-height: 28px;
     }
+  
     .text-content:nth-child(1) button {
         align-self: center;
     }
