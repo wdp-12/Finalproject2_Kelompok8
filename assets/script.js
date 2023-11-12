@@ -49,3 +49,18 @@ document.querySelector('.menu-icon-sm').addEventListener('click', () => {
         menuItems.style.transform = 'translateY(0)'
     }
 })
+
+// <==========({[Learn More Button Handler]})==========>
+document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('#learnMore');
+
+    buttons.forEach(function (button) {
+        button.addEventListener('mouseover', function () {
+            this.innerText = 'Get started';
+        });
+
+        button.addEventListener('mouseout', function () {
+            this.innerText = 'Learn more';
+        });
+    });
+});

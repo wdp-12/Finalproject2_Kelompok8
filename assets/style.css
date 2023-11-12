@@ -632,6 +632,76 @@ body::-webkit-scrollbar-thumb {
 /* <==========({[About style]})==========> */
 
 /* <==========({[Pricing style]})==========> */
+.pricing {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.offering {
+    margin-bottom: 30px;
+    transition: all 0.4s;
+    animation: slideUp 1.8s;
+}
+
+.offering h3 {
+    font-size: 47px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 60px;
+    background-color: #F2F6FF;
+    padding: 50px;
+    transition: all 0.5s;
+    animation: slideUp 2.0s;
+}
+
+.card-body p:nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-body p:nth-child(2) {
+    font-size: 18px;
+}
+
+.card-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #234CAD;
+}
+
+.card:hover {
+    border-radius: 60px;
+    border: 2px solid #234CAD;
+    outline: 2px solid #234CAD;
+    background-color: white;
+    padding: 50px;
+}
+
+#learnMore {
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 35px;
+    margin-top: 20px;
+    padding: 15px 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#learnMore:hover {
+    border-radius: 35px;
+    border: 2px solid #234CAD;
+    outline: 2px solid #234CAD;
+}
+
 
 /* <==========({[Contact-Newsletter style]})==========> */
 .newsletter {
@@ -642,7 +712,6 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     border-radius: 60px;
     background-color: #F2F6FF;
-    margin-bottom: 80px;
 }
 
 .newsletter h3 {
@@ -819,6 +888,27 @@ body::-webkit-scrollbar-thumb {
     .text-content:nth-child(1) button {
         align-self: center;
     }
+
+    .pricing {
+        padding: 30px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .card-title {
+        font-size: 40px;
+    }
+
+    .card-body h5 {
+        font-size: 30px;
+    }
+
+    #learnMore {
+        padding: 10px 30px;
+    }
+
 
     .footer {
         width: 100%;
