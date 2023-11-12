@@ -630,19 +630,103 @@ body::-webkit-scrollbar-thumb {
 /* <==========({[Features style]})==========> */
 
 /* <==========({[About style]})==========> */
-#about {
-    padding-bottom: 2000px;
-}
 
 /* <==========({[Pricing style]})==========> */
 
 /* <==========({[Contact-Newsletter style]})==========> */
-#contact {
-    padding-bottom: 2000px;
+.newsletter {
+    width: 90%;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 60px;
+    background-color: #F2F6FF;
+    margin-bottom: 80px;
+}
+
+.newsletter h3 {
+    font-size: 47px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.newsletter p {
+    justify-content: center; 
+    padding-bottom: 20px;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-content label {
+    display: none;
+}
+
+.newsletter-content input {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    width: 500px;
+    height: 60px;
+    padding: 15px;
+}
+
+.newsletter-content input::placeholder {
+    color: #0056b3;
+}
+
+.newsletter-content button {
+    background-color: #234CAD;
+    border: none;
+    border-radius: 30%;
+    padding: 10px 15px;
+    margin-left: -55px;
+    cursor: pointer;
+}
+
+.newsletter-content button img {
+    width: 15px;
+    height: 15px;
+}
+
+.newsletter-content button span {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.newsletter-content button:hover {
+    background-color: #257edf;
 }
 
 /* <==========({[Footer style]})==========> */
+.footer {
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
+.col-3 h4 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav p,
+.nav li a {
+    text-decoration: none;
+    color: #234CAD;
+    font-family: Nunito;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
 
 /* 768px BREAKPOINT */
 @media (max-width: 768px) {
@@ -731,10 +815,21 @@ body::-webkit-scrollbar-thumb {
         font-weight: 700;
         line-height: 28px;
     }
+  
     .text-content:nth-child(1) button {
         align-self: center;
     }
 
+    .footer {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .col-3 h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 /* <==========({[Local Keyframes]})==========> */
