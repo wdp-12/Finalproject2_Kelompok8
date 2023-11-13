@@ -376,28 +376,103 @@
     
     <!-- Section C : About & Pricing -->
     <section id="about" class="container">
-        <h2>Bahan-bahan:</h2>
-        <ul>
-            <li>1 buah paha ayam atas bawah, direbus, suwir ayamnya</li>
-            <li>2 buah telur, dikocok lepas</li>
-            <li>150 g udang, tanpa kulit</li>
-            <li>5 buah bakso sapi, potong-potong</li>
-            <li>5 buah bakso ikan, potong-potong</li>
-            <li>500 g nasi putih</li>
-            <li>2 sdm kecap manis Bango</li>
-            <li>1 sdt garam</li>
-            <li>1/2 sdt gula pasir</li>
-            <li>1 buah daun bawang, iris tipis</li>
-            <li>1 1/2 sdm bawang goreng untuk taburan</li>
-            <li>3 sdm minyak goreng untuk menumis</li>
-        </ul>
-    </section>
-    
-    <!-- Section D : Contact-Newsletter & Footer -->
-    <section id="contact" class="container">
-        D
+        
+        <!-- C: About Section -->
+        <div class="about"></div>
+
+        <!-- C: Pricing Section -->
+        <div class="pricing" data-aos="fade-down" data-aos-duration="1000">
+            <div class="offering container">
+                <h3 data-aos="fade-left" data-aos-duration="1000">Example our simple pricing</h3>
+                <p data-aos="fade-right" data-aos-duration="1000">We offer one the most competitive prices on the <br> market for everyone.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Basic</p>
+                            <h5 class="card-title">$9</h5>
+                            <p>Per month</p>
+                            <button id="learnMore">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card premium">
+                        <div class="card-body">
+                            <p>Premium</p>
+                            <h5 class="card-title">$29</h5>
+                            <p>Per month</p>
+                            <button id="learnMore">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Enterprise</p>
+                            <h5 class="card-title">$129</h5>
+                            <p>Per month</p>
+                            <button id="learnMore">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Section D : Contact-Newsletter & Footer -->
+    <section id="contact" class="container">
+            <div class="newsletter container" data-aos="fade-down" data-aos-duration="1000">
+                <h3 data-aos="fade-down" data-aos-duration="1000">Sign up to our newsletter</h3>
+                <p data-aos="fade-left" data-aos-duration="1000">Receive latest news, updates, discounts and <br> many other things every week.</p>
+                <form data-aos="fade-right" data-aos-duration="1000">
+                    <div class="newsletter-content">
+                        <label for="newsletter1" class="visually-hidden"></label>
+                        <input id="newsletter1" type="text" class="form-control col-sm-2" placeholder="Enter your email address">
+                        <button class="btn btn-primary" type="button" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="assets/submit-button.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+    <!-- D: Footer Section -->
+        <div class="footer container">
+            <div class="row">
+                <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                    <h4>Startup.io</h4>
+                    <div class="nav flex-column">
+                        <p>© 2023 - All rights <br> reserved.</p>
+                    </div>
+                </div>
+                
+                <div class="col-3" data-aos="fade-up" data-aos-duration="1500">
+                    <h4>Product</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Benefit</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Feedback</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Features</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-3" data-aos="fade-up" data-aos-duration="2000">
+                    <h4>About</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Company</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Team</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-3" data-aos="fade-up" data-aos-duration="2500">
+                    <h4>Support</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Get help</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Terms of service</a></li>
+                    </ul>
+                </div>
+        </div>
+    </section>
     
     <!-- Local JS -->
     <script src="assets/script.js"></script>
