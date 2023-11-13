@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .header-wrapper-sm,
@@ -73,29 +73,31 @@ body::-webkit-scrollbar-thumb {
     font-family: Nunito;
     font-weight: 600;
     line-height: 29px;
+    padding: 0 10px;
+    margin-left: 0;
+    border-radius: 4px;
     word-wrap: break-word;
 }
 
 .menu-items a:nth-child(1) {
     animation: popUp .6s;
-    transition: all .6s;
 }
 
 .menu-items a:nth-child(2) {
-    animation: popUp .7s;
-}
-
-.menu-items a:nth-child(3) {
     animation: popUp .8s;
 }
 
+.menu-items a:nth-child(3) {
+    animation: popUp 1s;
+}
+
 .menu-items a:nth-child(4) {
-    animation: popUp .9s;
+    animation: popUp 1.2s;
 }
 
 .menu-items a:hover {
-    border-bottom: 1px solid #234CAD;
-    transition: all 0.3s;
+    box-shadow: 0 -2px #234CAD inset;
+    transition: all 0.5s;
 }
 
 .btn-header {
@@ -155,7 +157,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-evenly;
     width: 375px;
     height: 100%;
     margin: 0 100px;
@@ -166,6 +167,8 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
     line-height: 56px;
     color: #234CAD;
+    margin-top: 108px;
+    margin-bottom: 25px;
     animation: slideUp .8s;
 }
 
@@ -174,6 +177,8 @@ body::-webkit-scrollbar-thumb {
     font-weight: 400;
     line-height: 26px;
     color: #234CAD;
+    margin-top: 0;
+    margin-bottom: 50px;
     animation: slideUp 1s;
 }
 
@@ -512,7 +517,7 @@ body::-webkit-scrollbar-thumb {
 
 /* <==========({[Product style]})==========> */
 #product .product {
-    margin-top: 150px;
+    padding-top: 150px;
 }
 
 .product-wrapper {
@@ -536,6 +541,11 @@ body::-webkit-scrollbar-thumb {
 .product-wrapper section:nth-child(2) .text-content p,
 .product-wrapper section:nth-child(2) .text-content button {
     margin: 1rem 0;
+    background-color: transparent;
+}
+
+.product-wrapper section:nth-child(2) .text-content button:hover {
+    transform: scale(0.9);
 }
 
 .product-content {
@@ -628,6 +638,97 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* <==========({[Features style]})==========> */
+.features-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 1240px;
+}
+
+.features-wrapper .title-content {
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-wrapper .title-content h3 {
+    text-align: center;
+    align-self: center;
+    width: 723px;
+    margin-bottom: 25px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.features-wrapper .title-content p {
+    align-self: center;
+    text-align: center;
+    width: 425px;
+    margin-bottom: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.features-wrapper .features-content {
+    width: 1240px;
+    height: 575px;
+    border-radius: 60px;
+    background-color: #F2F6FF;
+    display: flex;
+    position: relative;
+}
+
+.features-content .card1 {
+    position: absolute;
+    top: 55px;
+    left: 482px;
+}
+
+.features-content .card2 .card-content {
+    position: absolute;
+    top: 155px;
+    left: 783px;
+}
+
+.features-content .card3 .card-content {
+    position: absolute;
+    top: 155px;
+    left: 482px;
+}
+
+.features-content .card4 .card-content {
+    position: absolute;
+    top: 340px;
+    left: 482px;
+}
+
+.features-content .card5 .card-content {
+    position: absolute;
+    top: 465px;
+    left: 482px;
+}
+
+.features-content .card6 .card-content {
+    position: absolute;
+    top: 30px;
+    left: 583px;
+}
+
+.features-content .card7 .card-content {
+    position: absolute;
+    top: 270px;
+    left: 107px;
+}
+
+.features-content .card8 {
+    position: absolute;
+    top: 395px;
+    left: 382px;
+}
 
 /* <==========({[About style]})==========> */
 #about {
@@ -837,37 +938,74 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes loopPopUp {
     0% {
-        transform: scale(0);
+        transform: scale(0) translate(-250px, -250px);
         opacity: 0;
     }
 
     8% {
-        transform: scale(1.2);
+        transform: scale(1.2) translate(50px, 50px);
         opacity: 1;
     }
 
     12% {
-        transform: scale(1);
+        transform: scale(1) translate(0px, 0px);
         opacity: 1;
     }
 
     50% {
-        transform: scale(1);
+        transform: scale(1) translate(0px, 0px);
         opacity: 1;
     }
 
     54% {
-        transform: scale(1.2);
+        transform: scale(1.2) translate(-100px, -100px);
         opacity: 1;
     }
 
     72% {
-        transform: scale(0);
+        transform: scale(0) translate(250px, 250px);
         opacity: 0;
     }
 
     100% {
         transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes rollDown {
+    0% {
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+
+    8% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+
+    12% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    54% {
+        transform: translateY(-25px);
+        opacity: 1;
+    }
+
+    72% {
+        transform:  translateY(250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(250px);
         opacity: 0;
     }
 }
