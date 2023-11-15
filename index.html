@@ -25,7 +25,7 @@
 <body>
 
     <!-- Section A : Header & Banner -->
-    <section class="container">
+    <section class="container" id="backToTop">
         <div class="header-wrapper">
             <img src="assets/menu-button.svg" class="menu-icon" alt="MenuButton">
             <div class="menu-items">
@@ -35,8 +35,8 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="btn-header">
-                <button id="LoginButton">Login</button>
-                <button id="SignUpButton">Sign up</button>
+                <button id="LoginButton" data-aos="fade-left" data-aos-duration="700">Login</button>
+                <button id="SignUpButton" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">Sign up</button>
             </div>
         </div>
 
@@ -45,10 +45,10 @@
             <img src="assets/menu-button.svg" class="menu-icon-sm" alt="MenuButton">
             <div class="wrapper-sm">
                 <div class="menu-items">
-                    <a href="#home">Home</a>
-                    <a href="#product">Product</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#home" onclick="hideNav()">Home</a>
+                    <a href="#product" onclick="hideNav()">Product</a>
+                    <a href="#about" onclick="hideNav()">About</a>
+                    <a href="#contact" onclick="hideNav()">Contact</a>
                 </div>
                 <div class="btn-header">
                     <button id="LoginButton">Login</button>
@@ -254,8 +254,8 @@
                 <section data-aos="fade-up" data-aos-duration="1600">
                     <div class="text-content">
                         <h3 data-aos="fade-left" data-aos-duration="1000">Use our app to send messages to your team</h3>
-                        <p data-aos="fade-left" data-aos-duration="1300">We offer really easy communications for all businesses from small to large.</p>
-                        <button id="getApp" data-aos="fade-left" data-aos-duration="1700">Get the app</button>
+                        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">We offer really easy communications for all businesses from small to large.</p>
+                        <button id="getApp" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">Get the app</button>
                     </div>
                 </section>
             </div>
@@ -562,7 +562,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
                     <div class="card premium">
                         <div class="card-body">
                             <p>Premium</p>
@@ -572,7 +572,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <div class="card">
                         <div class="card-body">
                             <p>Enterprise</p>
@@ -588,56 +588,64 @@
 
     <!-- Section D : Contact-Newsletter & Footer -->
     <section id="contact" class="container">
-            <div class="newsletter container" data-aos="fade-down" data-aos-duration="1000">
-                <h3 data-aos="fade-down" data-aos-duration="1000">Sign up to our newsletter</h3>
-                <p data-aos="fade-left" data-aos-duration="1000">Receive latest news, updates, discounts and <br> many other things every week.</p>
-                <form data-aos="fade-right" data-aos-duration="1000">
-                    <div class="newsletter-content">
-                        <label for="newsletter1" class="visually-hidden"></label>
-                        <input id="newsletter1" type="text" class="form-control col-sm-2" placeholder="Enter your email address">
-                        <button class="btn btn-primary" type="button" data-aos="fade-right" data-aos-duration="1000">
-                            <img src="assets/submit-button.svg" alt="">
-                        </button>
-                    </div>
-                </form>
-            </div>
+        <div class="newsletter container" data-aos="fade-down" data-aos-duration="1000">
+            <h3 data-aos="fade-down" data-aos-duration="1000">Sign up to our newsletter</h3>
+            <p data-aos="fade-left" data-aos-duration="1000">Receive latest news, updates, discounts and <br> many other things every week.</p>
+            <form data-aos="fade-right" data-aos-duration="1000">
+                <div class="newsletter-content">
+                    <label for="newsletter1" class="visually-hidden"></label>
+                    <input id="newsletter1" type="text" class="form-control col-sm-2" placeholder="Enter your email address">
+                    <button class="btn btn-primary" type="button" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="assets/submit-button.svg" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
 
     <!-- D: Footer Section -->
         <div class="footer container">
             <div class="row">
-                <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
-                    <h4>Startup.io</h4>
-                    <div class="nav flex-column">
+                <div class="col-3">
+                    <h4 data-aos="fade-down" data-aos-duration="1000">Startup.io</h4>
+                    <div class="nav flex-column" data-aos="fade-up" data-aos-duration="1000">
                         <p>© 2023 - All rights <br> reserved.</p>
                     </div>
                 </div>
                 
-                <div class="col-3" data-aos="fade-up" data-aos-duration="1500">
-                    <h4>Product</h4>
-                    <ul class="nav flex-column">
+                <div class="col-3">
+                    <h4 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Product</h4>
+                    <ul class="nav flex-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Benefit</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Feedback</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Features</a></li>
                     </ul>
                 </div>
             
-                <div class="col-3" data-aos="fade-up" data-aos-duration="2000">
-                    <h4>About</h4>
-                    <ul class="nav flex-column">
+                <div class="col-3">
+                    <h4 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">About</h4>
+                    <ul class="nav flex-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Company</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Team</a></li>
                     </ul>
                 </div>
             
-                <div class="col-3" data-aos="fade-up" data-aos-duration="2500">
-                    <h4>Support</h4>
-                    <ul class="nav flex-column">
+                <div class="col-3">
+                    <h4 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">Support</h4>
+                    <ul class="nav flex-column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Get help</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link text-start">Terms of service</a></li>
                     </ul>
                 </div>
+            </div>
         </div>
     </section>
+
+    <a href="#backToTop" style="position: fixed; width: fit-content; bottom: 1.8rem; right: 1.8rem; background-color: transparent; box-shadow: 0 0 40px rgba(61, 91, 161, 0.1); padding: 13px 18px; border-radius: 50px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" viewBox="0 0 384 512">
+            <style>svg{fill:#234cad}</style>
+            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+        </svg>
+    </a>
     
     <!-- Local JS -->
     <script src="assets/script.js"></script>

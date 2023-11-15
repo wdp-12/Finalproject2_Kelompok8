@@ -19,14 +19,14 @@ if (!window.matchMedia("(max-width: 768px)").matches) {
     cardAnimation('.features-content .card1', 'loopPopUp', 2500)
     cardAnimation('.features-content .card2 .card-content', 'loopPopUp', 3500)
     cardAnimation('.features-content .card3 .card-content', 'loopPopUp', 500)
-    cardAnimation('.features-content .card4 .card-content', 'loopPopUp', 1900)
+    cardAnimation('.features-content .card4 .card-content', 'loopPopUp', 3900)
     cardAnimation('.features-content .card5 .card-content', 'loopPopUp', 2900)
     cardAnimation('.features-content .card6 .card-content', 'loopPopUp', 900)
     cardAnimation('.features-content .card7 .card-content', 'loopPopUp', 1500)
-    cardAnimation('.features-content .card8', 'loopPopUp', 3900)
-    cardAnimation('.product1 .product-content', 'rollDown', 1200, 6.8)
-    cardAnimation('.product2 .product-content', 'rollDown', 1000, 6.8)
-    cardAnimation('.product3 .product-content', 'rollDown', 800, 6.8)
+    cardAnimation('.features-content .card8', 'loopPopUp', 1900)
+    cardAnimation('.product1 .product-content', 'rollDown', 1200, 6.5)
+    cardAnimation('.product2 .product-content', 'rollDown', 1000, 6.5)
+    cardAnimation('.product3 .product-content', 'rollDown', 800, 6.5)
 }
 
 // <==========({[Smooth Scroll Handler]})==========>
@@ -60,6 +60,15 @@ document.querySelector('.menu-icon-sm').addEventListener('click', () => {
         menuItems.style.transform = 'translateY(0)'
     }
 })
+
+function hideNav() {
+    const menuItems = document.querySelector('.wrapper-sm');
+    menuItems.style.opacity = '0'
+    menuItems.style.transform = 'translateY(-15px)'
+    setTimeout(() => {
+        menuItems.style.display = 'none'
+    }, 400);
+}
 
 // <==========({[Learn More Button Handler]})==========>
 document.addEventListener('DOMContentLoaded', function () {
