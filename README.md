@@ -1,16 +1,16 @@
 ## Final Project 2 | Landing Page Project
 
-**Description**
-
-**Group 8 Members**
-
+**Description** <br>
 Mereplikasi dan meningkatkan landing page seperti contoh yang telah disediakan di Figma.
 
-1. Mohammad Ari Zidan Syafrizal
-
+**Group 8 Members** <br>
+1. Mohammad Ari Zidan Syafrizal <br> 
 2. Shehnaz Nazyma Nabilah
 
-### Assignment details
+
+---    
+
+### Assignment details —
 
 1. Analisis Template Landing Pages
     
@@ -25,20 +25,13 @@ Mereplikasi dan meningkatkan landing page seperti contoh yang telah disediakan d
     Berdiskusi dengan members untuk membagi tugas proyek.
     
 4. Pembuatan landing pages 
-    
-    
-    - Section A: Header & Banner
-    - Section B: Product Features 1 & Features
-    - Section C: About & Pricing
-    - Section D: Contact & Footer
-    
-    | Ari Zidan
-    
-    | Ari Zidan
-    
-    | Shehnaz N
-    
-    | Shehnaz N
+
+    | Bagian | Penanggung Jawab |
+    | --- | --- |
+    | 1. Section A: Header & Banner                  | Ari Zidan |
+    | 2. Section B: Product Features 1 & Features    | Ari Zidan |
+    | 3. Section C: About & Pricing                  | Shehnaz N |
+    | 4. Section D: Contact & Footer                 | Shehnaz N |
     
 5. Perbaikan Style, Fungsi, dan Pengeditan Fitur
     
@@ -48,8 +41,9 @@ Mereplikasi dan meningkatkan landing page seperti contoh yang telah disediakan d
     
     Menggabungkan commit pada masing-masing branch ke main di repositori.
     
+---
 
 ### Project Preview —
 
-https://finalproject2-kelompok8.vercel.app/
-https://main--statuesque-dodol-c2b994.netlify.app/ 
+Vercel  : https://finalproject2-kelompok8.vercel.app/ <br>
+Netlify : https://main--statuesque-dodol-c2b994.netlify.app/ 
